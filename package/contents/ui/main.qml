@@ -110,7 +110,7 @@ Item {
             ListDelegate {
                 id: systemPreferencesItem
                 highlight: delegateHighlight
-                text: i18n("System Preferences...")
+                text: i18n("System Settings")
                 onClicked: {
                     executable.exec(systemPreferencesCMD); // cmd exec
                 }
@@ -119,7 +119,7 @@ Item {
             ListDelegate {
                 id: appStoreItem
                 highlight: delegateHighlight
-                text: i18n("App Store...")
+                text: i18n("Discover")
                 onClicked: {
                     executable.exec(appStoreCMD); // cmd exec
                 }
@@ -140,13 +140,7 @@ Item {
             ListDelegate { 
                 id: forceQuitItem
                 highlight: delegateHighlight
-                text: i18n("Force Quit...")
-                // right shortcut item
-                PlasmaComponents.Label {
-                    text: "⌥⌘⎋ "
-                    anchors.right: parent.right
-                    anchors.verticalCenter: parent.verticalCenter
-                }
+                text: i18n("Force Quit")
                 onClicked: {
                     executable.exec(forceQuitCMD); // cmd exec
                 }
@@ -176,7 +170,7 @@ Item {
             ListDelegate { 
                 id: restartItem
                 highlight: delegateHighlight
-                text: i18n("Restart...")
+                text: i18n("Restart")
                 onClicked: {
                     executable.exec(restartCMD); // cmd exec
                 }
@@ -185,7 +179,7 @@ Item {
             ListDelegate { 
                 id: shutDownItem
                 highlight: delegateHighlight
-                text: i18n("Shut Down...")
+                text: i18n("Shut Down")
                 onClicked: {
                     executable.exec(shutDownCMD); // cmd exec
                 }
@@ -207,12 +201,6 @@ Item {
                 id: lockScreenItem
                 highlight: delegateHighlight
                 text: i18n("Lock Screen")
-                // right shortcut item
-                PlasmaComponents.Label {
-                    text: "⌃⌘Q "
-                    anchors.right: parent.right
-                    anchors.verticalCenter: parent.verticalCenter
-                }
                 onClicked: {
                     executable.exec(lockScreenCMD); // cmd exec
                 }
@@ -222,12 +210,6 @@ Item {
                 id: logOutItem
                 highlight: delegateHighlight
                 text: i18n("Log Out")
-                // right shortcut item
-                PlasmaComponents.Label {
-                    text: "⇧⌘Q "
-                    anchors.right: parent.right
-                    anchors.verticalCenter: parent.verticalCenter
-                }
                 onClicked: {
                     executable.exec(logOutCMD); // cmd exec
                 }

@@ -23,7 +23,7 @@ Open a terminal and follow the steps below.
 git clone https://github.com/kppleos/org.kpple.kppleMenu.git
 mv org.kpple.kppleMenu/package/* org.kpple.kppleMenu/
 rm org.kpple.kppleMenu/package/
-mv org.kpple.kppleMenu/ ~/.local/share/plasma/plasmoids/org.kpple.kppleMenu 
+mv org.kpple.kppleMenu/ ~/.local/share/plasma/plasmoids/
 
 ```
 
